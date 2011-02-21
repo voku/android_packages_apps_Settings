@@ -106,6 +106,8 @@
     <!-- Title for a notification shown. -->
     <string name="sdcard_setting">SD card</string>
 
+    <!-- Battery Menu -->
+    <string name="battery_info_menu_title">Battery info</string>
 
     <!-- Battery Info screen. Label for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
     <string name="battery_info_status_label">Battery status:</string>
@@ -174,10 +176,6 @@
 
     <!-- Used as setting title (for checkbox) on second screen after selecting Bluetooth settings -->
     <string name="bluetooth">Bluetooth</string>
-    <!-- Bluetooth settings screen, list label how long the device remains in discoverable mode -->
-    <string name="bluetooth_discoverable_duration_title">Discoverable duration</string>
-    <!-- Bluetooth settings screen, Discoverable duration list summary -->
-    <string name="bluetooth_discoverable_duration_summary">How long the device stays discoverable</string>
     <!-- Bluetooth settings screen, check box label when the Bluetooth device can be seen by others -->
     <string name="bluetooth_visibility">Discoverable</string>
     <!-- Bluetooth settings screen, summary after selecting Discoverable check box -->
@@ -1788,6 +1786,9 @@ found in the list of installed applications.</string>
     <!-- Manage applications. application installation location summary -->
     <string name="app_install_location_summary">Change the preferred installation location for new applications.</string>
 
+    <string name="usage_statistics_title">Usage statistics</string>
+    <string name="usage_statistics_summary">Summary of application usage</string>
+
     <!-- Services settings screen, setting option name for the user to go to the screen to view running services -->
     <string name="runningservices_settings_title">Running services</string>
     <!-- Services settings screen, setting option summary for the user to go to the screen to view running services  -->
@@ -2121,6 +2122,9 @@ found in the list of installed applications.</string>
 
     <!-- App Fuel Gauge strings -->
     <skip/>
+
+    <string name="advanced_power_usage_title">Advanced battery use</string>
+    <string name="advanced_power_usage_summary">Detailed info of battery usage</string>
 
     <!-- Activity title for App Fuel Gauge summary -->
     <string name="power_usage_summary_title">Battery use</string>
@@ -2612,7 +2616,7 @@ found in the list of installed applications.</string>
     <string name="sound_category_notification_title">Notifications</string>
     <string name="sound_category_feedback_title">Feedback</string>
 
-    <string name="cm_settings_title">CyanogenMod settings</string>
+    <string name="sm_settings_title">SpicagenMod settings</string>
     <string name="launcher_settings_title">ADWLauncher</string>
 
     <string name="possibleButtons">Possible Buttons</string>

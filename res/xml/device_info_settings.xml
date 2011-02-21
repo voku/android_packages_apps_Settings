@@ -27,12 +27,31 @@
         </PreferenceScreen>
         
         <PreferenceScreen
-                android:key="power_usage"
-                android:title="@string/power_usage_summary_title"
-                android:summary="@string/power_usage_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.fuelgauge.PowerUsageSummary" />
+                android:key="battery_info_menu"
+                android:title="@string/power_usage_summary_title">
+                <PreferenceScreen
+                        android:key="power_usage"
+                        android:title="@string/power_usage_summary_title"
+                        android:summary="@string/power_usage_summary">
+                    <intent android:action="android.intent.action.MAIN"
+                            android:targetPackage="com.android.settings"
+                            android:targetClass="com.android.settings.fuelgauge.PowerUsageSummary" />
+                </PreferenceScreen>
+                <PreferenceScreen
+                        android:key="advanced_power_usage"
+                        android:title="@string/advanced_power_usage_title"
+                        android:summary="@string/advanced_power_usage_summary">
+                    <intent android:action="android.intent.action.MAIN"
+                            android:targetPackage="com.android.settings"
+                            android:targetClass="com.android.settings.battery_history.BatteryHistory" />
+                </PreferenceScreen>
+                <PreferenceScreen
+                        android:key="battery_info"
+                        android:title="@string/battery_info_menu_title">
+                    <intent android:action="android.intent.action.MAIN"
+                            android:targetPackage="com.android.settings"
+                            android:targetClass="com.android.settings.BatteryInfo" />
+                </PreferenceScreen>
         </PreferenceScreen>
 
         <!-- Legal Information -->
