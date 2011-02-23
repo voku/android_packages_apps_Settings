@@ -2608,7 +2608,7 @@ found in the list of installed applications.</string>
     <string name="sound_category_feedback_title">Feedback</string>
 
     <string name="sm_settings_title">SpicagenMod settings</string>
-    <string name="launcher_settings_title">ADWLauncher</string>
+    <string name="launcher_settings_title">Launcher settings</string>
 
     <string name="possibleButtons">Possible Buttons</string>
     <string name="toggleWifi">Wi-Fi</string>
