@@ -156,7 +156,7 @@ public class SoundSettings extends PreferenceActivity implements
                         Settings.System.NOTIFICATION_LIGHT_PULSE) == 1);
                 mNotificationPulse.setOnPreferenceChangeListener(this);
             } catch (SettingNotFoundException snfe) {
-                Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_BLINK + " not found");
+                Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_PULSE + " not found");
 			}
 		}
     }
