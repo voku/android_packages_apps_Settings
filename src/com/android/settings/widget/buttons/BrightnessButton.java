@@ -60,17 +60,6 @@ Low High Max
 
 
 	 */
-	
-	public static int getMinBacklight(Context context) {		
-		if (Settings.System.getInt(context.getContentResolver(),Settings.System.LIGHT_SENSOR_CUSTOM, 0) != 0) {
-			   return Settings.System.getInt(context.getContentResolver(),Settings.System.LIGHT_SCREEN_DIM, MINIMUM_BACKLIGHT);
-		} else {
-			return MINIMUM_BACKLIGHT;
-		}
-		
-		
-	}
-
 
 	private static boolean isAutomaticModeSupported(Context context) {
 		if (supportsAutomaticMode==null) {
@@ -123,7 +112,7 @@ Low High Max
 			if (currentMode==MODE_AUTO_LOW_MAX) {
 				return LOW_BACKLIGHT;
 			} else {
-				return getMinBacklight(context);				
+				return MINIMUM_BACKLIGHT;
 			}
 		} else if (brightness < LOW_BACKLIGHT) {
 			if (currentMode==MODE_AUTO_LOW_MAX) {
@@ -160,7 +149,7 @@ Low High Max
 		} else if(currentMode == MODE_AUTO_LOW_MAX){
 			return LOW_BACKLIGHT;				
 		} else {
-			return getMinBacklight(context);
+			return MINIMUM_BACKLIGHT;
 		}
 	}
 
