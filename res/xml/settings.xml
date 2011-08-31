@@ -20,20 +20,19 @@
     android:title="@string/settings_label"
     android:key="parent">
 
-        <!-- Operator hook -->
-
+<!-- Operator hook -->
         <com.android.settings.IconPreferenceScreen
             android:key="operator_settings">
             <intent android:action="com.android.settings.OPERATOR_APPLICATION_SETTING" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Manufacturer hook -->
-
+<!-- Manufacturer hook -->
         <com.android.settings.IconPreferenceScreen
             android:key="manufacturer_settings">
             <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
         </com.android.settings.IconPreferenceScreen>
 
+<!--Wireless & networks -->
         <com.android.settings.IconPreferenceScreen
             android:title="@string/radio_controls_title"
             settings:icon="@drawable/ic_settings_wireless">
@@ -43,6 +42,7 @@
                 android:targetClass="com.android.settings.WirelessSettings" />
         </com.android.settings.IconPreferenceScreen>
 
+<!-- Call Settings-->
         <com.android.settings.IconPreferenceScreen
             android:key="call_settings"
             settings:icon="@drawable/ic_settings_call"
@@ -53,8 +53,7 @@
                 android:targetClass="com.android.phone.CallFeaturesSetting" />
         </com.android.settings.IconPreferenceScreen>
 
- 	<!-- Launcher -->
-
+<!-- Launcher -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_launcher"
             android:title="@string/launcher_settings_title"
@@ -65,8 +64,7 @@
                 android:targetClass="com.android.launcher.MyLauncherSettings" />
         </com.android.settings.IconPreferenceScreen>
 
-
-	<!-- CM Settings -->
+<!-- CM Settings -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_spicagenmod"
             android:title="@string/sm_settings_title">
@@ -76,9 +74,7 @@
                 android:targetClass="com.spicagenmod.smparts.activities.MainActivity" />
         </com.android.settings.IconPreferenceScreen>
 
-
-        <!-- Sound -->
-
+<!-- Sound -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_sound"
             android:title="@string/sound_settings_title">
@@ -88,8 +84,7 @@
                 android:targetClass="com.android.settings.SoundSettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Display -->
-
+<!-- Display -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_display"
             android:title="@string/display_settings_title">
@@ -99,8 +94,7 @@
                 android:targetClass="com.android.settings.DisplaySettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Security & Location -->
-
+<!-- Security & Location -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_security"
             android:title="@string/security_settings_title"
@@ -111,8 +105,7 @@
                 android:targetClass="com.android.settings.SecuritySettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Application Settings -->
-
+<!-- Application Settings -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_applications"
             android:title="@string/applications_settings"
@@ -123,10 +116,9 @@
                 android:targetClass="com.android.settings.ApplicationSettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Data Sync. The settings activity will ensure this is resolved to an
-             activity on the system image, otherwise it will remove this
-             preference. -->
-
+<!-- Data Sync. The settings activity will ensure this is resolved to an
+     activity on the system image, otherwise it will remove this
+     preference. -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_sync"
             android:title="@string/sync_settings"
@@ -134,8 +126,7 @@
             <intent android:action="android.settings.SYNC_SETTINGS" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Privacy -->
-
+<!-- Privacy -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_privacy"
             android:title="@string/privacy_settings"
@@ -146,8 +137,7 @@
                 android:targetClass="com.android.settings.PrivacySettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Storage -->
-
+<!-- Storage -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_storage"
             android:title="@string/storage_settings">
@@ -156,8 +146,7 @@
                 android:targetClass="com.android.settings.deviceinfo.Memory" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Language -->
-
+<!-- Language -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_language"
             android:title="@string/language_settings">
@@ -167,8 +156,7 @@
                 android:targetClass="com.android.settings.LanguageSettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Voice input & output -->
-
+<!-- Voice input & output -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_speech"
             android:title="@string/voice_input_output_settings">
@@ -178,8 +166,7 @@
                 android:targetClass="com.android.settings.VoiceInputOutputSettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Accessibility feedback -->
-
+<!-- Accessibility feedback -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_accessibility"
             android:title="@string/accessibility_settings">
@@ -189,8 +176,7 @@
                 android:targetClass="com.android.settings.AccessibilitySettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Dock -->
-
+<!-- Dock -->
         <com.android.settings.IconPreferenceScreen
             android:key="dock_settings"
             settings:icon="@drawable/ic_settings_dock"
@@ -201,8 +187,7 @@
                 android:targetClass="com.android.settings.DockSettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Date & Time -->
-
+<!-- Date & Time -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_date_time"
             android:title="@string/date_and_time_settings_title">
@@ -212,8 +197,17 @@
                 android:targetClass="com.android.settings.DateTimeSettings" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- About Device -->
+<!-- About ROM -->
+        <com.android.settings.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_about"
+            android:title="@string/about_rom">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.RomInfoSettings" />
+        </com.android.settings.IconPreferenceScreen>
 
+<!-- About Device -->
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_about"
             android:title="@string/about_settings">

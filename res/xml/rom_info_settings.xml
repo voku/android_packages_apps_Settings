@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="@string/about_rom">
+            
+<!-- Device -->
+    <Preference android:key="device"
+                        style="?android:preferenceInformationStyle"
+                android:title="@string/device"
+                android:summary="@string/rom_info_default"/>
+<!-- Developer -->
+    <Preference android:key="developer"
+                        style="?android:preferenceInformationStyle"
+                android:title="@string/developer"
+                android:summary="@string/rom_info_default"/>
+<!-- ROM -->
+    <Preference android:key="rom"
+                        style="?android:preferenceInformationStyle"
+                android:title="@string/rom"
+                android:summary="@string/rom_info_default"/>
+<!-- Build Number -->
+    <Preference android:key="build_number"
+                        style="?android:preferenceInformationStyle"
+                android:title="@string/build_number"
+                android:summary="@string/rom_info_default"/>
+<!-- Code Base -->
+    <Preference android:key="code_base"
+                        style="?android:preferenceInformationStyle"
+                android:title="@string/code_base"
+                android:summary="@string/rom_info_default"/>
+
+<!-- General Info -->
+<PreferenceCategory android:title="@string/info_title">
+    <PreferenceScreen
+        android:key="changelog"
+            android:title="@string/changelog_title">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.ChangeLog" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="credits"
+            android:title="@string/credits_title">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.Credits" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="contributors"
+            android:title="@string/contributors_title">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.Contributors" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="license"
+            android:title="@string/license_title">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.License" />
+    </PreferenceScreen>
+</PreferenceCategory>
+
+</PreferenceScreen>
