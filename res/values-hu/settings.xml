@@ -2596,7 +2596,7 @@
     <string name="sound_category_feedback_title">Visszajelzés</string>
 
     <string name="cm_settings_title">CyanogenMod beállítások</string>
-    <string name="launcher_settings_title">ADWLauncher</string>
+    <string name="launcher_settings_title">Launcher</string>
 
     <string name="possibleButtons">Lehetséges gombok</string>
     <string name="toggleWifi">Wi-Fi</string>

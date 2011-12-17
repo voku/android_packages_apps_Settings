@@ -1098,7 +1098,7 @@
 
 
     <string name="cm_settings_title">CyanogenMod nastavenia</string>
-    <string name="launcher_settings_title">ADWLauncher</string>
+    <string name="launcher_settings_title">Launcher</string>
 
     <string name="possibleButtons">Možné tlačidlá</string>
     <string name="toggleWifi">Wi-Fi</string>

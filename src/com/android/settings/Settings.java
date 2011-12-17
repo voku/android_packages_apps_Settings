@@ -71,7 +71,7 @@ public class Settings extends PreferenceActivity {
         PreferenceGroup parent = (PreferenceGroup) findPreference(KEY_PARENT);
 
         ActivityInfo a = getPackageManager().resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY).activityInfo;
-		if (a != null && a.name.equals("com.android.launcher.Launcher") && (a.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0 ){
+        if (a != null && a.name.equals("com.android.launcher.Launcher") && (a.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0 ){
 			Intent launcherIntent = new Intent();
 			launcherIntent.setClassName("com.android.launcher", "com.android.launcher.MyLauncherSettings");
 			mLauncherSettings.setIntent(launcherIntent);

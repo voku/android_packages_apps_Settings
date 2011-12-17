@@ -1097,7 +1097,7 @@
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"반응"</string>
 
     <string name="cm_settings_title">CyanogenMod 설정</string>
-    <string name="launcher_settings_title">ADWLauncher</string>
+    <string name="launcher_settings_title">Launcher</string>
 
     <string name="possibleButtons">가능한 버튼</string>
     <string name="toggleWifi">와이파이</string>

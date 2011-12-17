@@ -1151,7 +1151,7 @@
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"Feedback"</string>
 
     <string name="cm_settings_title">CyanogenMod</string>
-    <string name="launcher_settings_title">ADW.Launcher</string>
+    <string name="launcher_settings_title">Launcher</string>
 
     <!-- extra OpenVPN settings by takuo -->
     <string name="vpn_openvpn_set_cipher">Chiffrieralgorithmus</string>

@@ -1133,7 +1133,7 @@
   <string name="sound_category_notification_title">Notificacions</string>
   <string name="sound_category_feedback_title">Retroacció</string>
   <string name="cm_settings_title">Paràmetres de CyanogenMod</string>
-  <string name="launcher_settings_title">ADWLauncher</string>
+  <string name="launcher_settings_title">Launcher</string>
   <string name="possibleButtons">Botons possibles</string>
   <string name="toggleWifi">Wi-Fi</string>
   <string name="toggleWifiAp">Hotspot Wi-Fi portàtil</string>
